@@ -8,6 +8,19 @@ import StarRatingComponent from 'react-star-rating-component';
 class FeedbackData extends Component {
     state = {
         feedbackForm: {
+            review: {
+                elementType: 'textarea',
+                elementConfig: {
+                    type: 'textarea',
+                    placeholder: 'Your Review'
+                },
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false,
+                touched: false
+            },
             name: {
                 elementType: 'input',
                 elementConfig: {
